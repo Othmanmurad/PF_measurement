@@ -37,8 +37,8 @@ class MagneLabCT:
 
 # Usage example
 if __name__ == "__main__":
-    # Change max_current based on your CT model (5, 20, 50, 100, 200, or 600)
-    sensor = MagneLabCT(channel=0, max_current=20)
+    # Change max_current based on your CT model (5, 20, 30, 50, 100, 200, or 600)
+    sensor = MagneLabCT(channel=0, max_current=30)
 
     print("Timestamp,Calibrated Voltage,Calibrated RMS Current")
     print("Press Ctrl+C to stop the program")
