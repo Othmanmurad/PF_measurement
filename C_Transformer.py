@@ -10,8 +10,8 @@ class MagneLabCT:
     SAMPLE_INTERVAL = 0.001  # 1 ms between samples
     
     # Calibration factors
-    VOLTAGE_CALIBRATION = 21.5  # Actual value/ value printed through the code
-    CURRENT_CALIBRATION = 1.45  # Actual value/ value printed through the code
+    VOLTAGE_CALIBRATION = 24.5  # Actual value/ value printed through the code
+    CURRENT_CALIBRATION = 1.85  # Actual value/ value printed through the code
 
     def __init__(self, channel, max_current):
         self.adc = MCP3008(channel=channel)
