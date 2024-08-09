@@ -75,6 +75,17 @@ def read_voltage_samples():
 
 def calculate_power_parameters(voltages, current):
     v_rms = np.sqrt(np.mean(voltages**2))
+    
+     # Set current to 0 if it's less than 0.4
+    if current < 0.4:
+        current = 0.0
+    
+    i_rms = current
+    
+    # Set i_rms to 0 if it's less than 0.4
+    if i_rms < 0.4:
+        i_rms = 0.0
+        
     i_rms = current
     apparent_power = v_rms * i_rms
     active_power = np.mean(voltages * current)  # Modified calculation for active power
